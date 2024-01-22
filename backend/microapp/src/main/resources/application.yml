@@ -1,0 +1,21 @@
+micronaut:
+  application:
+    name: microapp
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/micronaut
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Ellison@2000
+    db-type: mysql
+    dialect: MYSQL
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+netty:
+  default:
+    allocator:
+      max-order: 3
